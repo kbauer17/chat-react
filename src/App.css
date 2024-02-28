@@ -44,3 +44,7 @@
   opacity: .6;
   font-variant: small-caps;
 }
+
+.Chat-message:nth-child(even) {
+  background-color: #2F92D0;
+}
