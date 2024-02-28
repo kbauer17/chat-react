@@ -9,10 +9,7 @@ const ChatForm = () => {
         console.log('submit');
       }
     
-
-
-
-  return (
+return (
     <form onSubmit={handleSubmit} className='Chat-form'>
       <input 
         type="text" 
