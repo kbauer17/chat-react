@@ -1,15 +1,16 @@
 import React, {useState} from 'react';
 
-const ChatForm = () => {
+const ChatForm = (props) => {
+    const { onSend } = props;
     const [ name, setName] = useState('');
     const [ message, setMessage] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('submit');
+        onSend({ name, message });
       }
     
-return (
+    return (
     <form onSubmit={handleSubmit} className='Chat-form'>
       <input 
         type="text" 
